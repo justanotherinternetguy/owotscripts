@@ -8,10 +8,14 @@
 * For more information, please refer to <http://unlicense.org/> */
 
 const ERASE_KB = "CTRL+E";
-let target_chars = '';
-for (let i = 0; i <= 0xFFFF; i++) {
-   target_chars += String.fromCharCode(i);
-}
+let target_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+// Include symbols and special characters
+target_chars += "!@#$%^&*()-=_+[]{}|;':\",.<>/?`~ ";
+
+// Include additional Unicode characters
+target_chars += "▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐░▒▓▔▕▖▗▘▙▚▛▜▝▞▟";
+
 let erase_mode = false;
 
 function flood(x, y) {

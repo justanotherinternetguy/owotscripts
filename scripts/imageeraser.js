@@ -9,10 +9,7 @@
 
 const ERASE_KB = "CTRL+E";
 let target_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-// Include symbols and special characters
-target_chars += "!@#$%^&*()-=_+[]{}|;':\",.<>/?`~ ";
-
+target_chars += "!@#$%^&*()-=_+[]{}|;':\",.<>/?`~";
 // Include additional Unicode characters
 target_chars += "▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐░▒▓▔▕▖▗▘▙▚▛▜▝▞▟";
 
